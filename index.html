@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Misha 5 tasks</title>
+  </head>
+  <body>
+    <button id="dateTime" class="show-modal">Date and time</button>
+    <button id="temperature" class="show-modal">Temperature converter</button>
+    <button id="calc" class="show-modal">Sum calculator</button>
+    <button id="string" class="show-modal">String character remover</button>
+    <button id="btnColor" class="show-modal">Change button color</button>
+
+    <div class ="converter hidden">
+      <section class="celsius">
+        <h1 id="celsDegrees"> Celsius degrees: </h1>
+        <input id="celsInput" type="number" style="height: 50px; width: 80%; font-size: 30px; display:block; margin : 0 auto; text-align: center;">
+      </section>
+    
+      <section class ="btnConvertDiv">
+        <button id="btnConvert" class="show-modal converters">Convert</button>
+        <button id="btnSwitch" class="show-modal converters">Switch</button>
+      </section>
+
+      <section class="fahrenheit">
+        <h1 id ="fahrDegrees"> Fahrenheit degrees: </h1>
+        <h1 id = "converted"></h1> 
+        <!-- <input id="fahrenheit" type="number" style="height: 50px; width: 80%; font-size: 30px; display:block; margin : 0 auto; text-align: center;"> -->
+      </section>
+    </div>
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div>
+<img id="gif" class="hidden" src="https://c.tenor.com/M0m37ZMcROgAAAAC/oh-yeah-evil-smile.gif">
+</div>
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class = "stringDeleter hidden">
+      <input id="inputPhrase" class="centered" type = "text" placeholder="Enter your string" /> <br>
+      <input id="indexDelete" class="centered" type = "number" style="width: 33%; text-align: center;" placeholder="Character index for deletion">
+      <button id="applyDeletion" class ="show-modal centered"> Delete </button> 
+      <h1> String after deletion: </h1>
+      <h2 id ="delOutput" style="text-align: center; font-size: 25px;" > </h2>
+    </div>
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="modal hidden">
+      <button class="close-modal"></button>
+      <h1 id="popText"> I'm a modal window 😍</h1>
+      <p>
+          <h2 id="tasks"> Text Value </h2>
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
